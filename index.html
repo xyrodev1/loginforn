@@ -3,73 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Vapid Decree - Esports Team</title>
+    <title>Your Esports Team</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="logo">Vapid Decree</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <header class="header">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Team Logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="socials.html">Socials</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
-        <h1>Welcome to Vapid Decree</h1>
-        <p>Your elite esports team.</p>
-        <a href="https://discord.gg/pmX7GgFdts" class="discord-link">Join our Discord</a>
+        <div class="hero-content">
+            <h1>Welcome to <span>Your Esports Team</span></h1>
+            <p>Competing. Winning. Dominating.</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>Vapid Decree is an elite esports team formed by passionate gamers. We compete in various tournaments and are dedicated to becoming the best. Our team values collaboration, strategy, and passion for gaming.</p>
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a dedicated esports team, competing in the most exciting tournaments worldwide. Since our inception, we've been committed to excellence and teamwork.</p>
+        </div>
     </section>
 
-    <!-- Team Section -->
     <section id="team" class="team">
-        <h2>Our Team</h2>
-        <div class="team-members">
-            <div class="team-member">
-                <img src="player1.jpg" alt="Player 1">
-                <h3>Player 1</h3>
-                <p>Role: Leader</p>
-            </div>
-            <div class="team-member">
-                <img src="player2.jpg" alt="Player 2">
-                <h3>Player 2</h3>
-                <p>Role: Strategist</p>
-            </div>
-            <div class="team-member">
-                <img src="player3.jpg" alt="Player 3">
-                <h3>Player 3</h3>
-                <p>Role: Attacker</p>
-            </div>
-            <div class="team-member">
-                <img src="player4.jpg" alt="Player 4">
-                <h3>Player 4</h3>
-                <p>Role: Defender</p>
+        <div class="container">
+<h2>Meet the Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="assets/team1.jpg" alt="Player 1">
+                    <h3>Player 1</h3>
+                    <p>Role: Sniper</p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/team2.jpg" alt="Player 2">
+                    <h3>Player 2</h3>
+                    <p>Role: Strategist</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>For inquiries, sponsorships, or more information, reach us through our Discord or email us at contact@vapiddecree.gg.</p>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Vapid Decree. All rights reserved.</p>
+        <p>&copy; 2024 Your Esports Team. All Rights Reserved. | <a href="socials.html">Follow us on Socials</a></p>
     </footer>
-
 </body>
 </html>
